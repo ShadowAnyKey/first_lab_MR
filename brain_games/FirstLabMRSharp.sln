@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstLabMRSharp", "FirstLabMRSharp.csproj", "{768A44FA-651D-4803-A5BA-729F1657000B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{768A44FA-651D-4803-A5BA-729F1657000B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768A44FA-651D-4803-A5BA-729F1657000B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768A44FA-651D-4803-A5BA-729F1657000B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768A44FA-651D-4803-A5BA-729F1657000B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AA61B38-9EB5-4383-AAD7-7C59D152A41B}
+	EndGlobalSection
+EndGlobal
