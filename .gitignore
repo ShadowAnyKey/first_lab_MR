@@ -1,0 +1,79 @@
+# Общие файлы ОС
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log
+
+# Папки с билдами
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Папка с результатами тестов
+TestResults/
+
+# Временные файлы Visual Studio
+.vscode/
+.vs/
+
+# Файлы конфигурации среды
+*.user
+*.rsuser
+*.suo
+
+# Пакеты NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Файлы настройки сборки MSBuild
+project.lock.json
+project.fragment.lock.json
+
+# Конфигурационные файлы при деплое
+*.Publish.xml
+.env
+
+# Файлы папки `Properties` (локальные настройки)
+Properties/launchSettings.json
+
+# Файлы системы (например, конфигурации виртуальных машин)
+.vagrant/
+.idea/
+
+# Файлы для Azure
+.azure/
+
+# Rider IDE
+.idea/
+*.sln.iml
+
+# Конфигурация для Mac
+.vscode/
+
+# ASP.NET-сайт
+*.swf
+project.lock.json
+project.fragment.lock.json
+
+# Секция для файлов SQL Server
+*.mdf
+*.ldf
+
+# Секция для файлов при работе с Docker
+docker-compose.yml
+docker-compose.*
+
+# Сертификаты SSL
+*.pfx
+*.p12
+
+# Резервные файлы Visual Studio
+_backup/
+*.bak
+*.backup
+
+# Файлы временной сборки
+*.tmp
