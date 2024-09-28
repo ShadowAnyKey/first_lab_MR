@@ -42,15 +42,12 @@ public class Engine
         Console.WriteLine("Введите желаемое количество раундов: ");
         int rounds = Convert.ToInt32(Console.ReadLine());
         int numCorrectAnsers = 0;
-
         for (int i = 0; i < rounds; i++)
         {
             var (question, correctAnswer) = generateRound();
-
             Console.WriteLine($"Question: {question}");
             Console.WriteLine("Your answer: ");
             string userImput = Console.ReadLine();
-            
             if (userImput == correctAnswer)
             {
                 Console.WriteLine("Correct");
@@ -63,7 +60,6 @@ public class Engine
                 break;
             }
         }
-
         if (numCorrectAnsers == rounds)
         {
             ShowCongratulations(userName);

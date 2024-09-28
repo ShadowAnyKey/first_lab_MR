@@ -19,18 +19,14 @@ public class GeometricProgrssionGame
         int length = random.Next(5, 11);
         int start = random.Next(1, 10);
         int ratio = random.Next(2, 6);
-
         int[] progression = new int[length];
-
         progression[0] = start;
         for (int i = 1; i < length; i++)
         {
             progression[i] = progression[i - 1] * ratio;
         }
-
         int hiddenIndex = random.Next(0, length);
         int correctAnswer = progression[hiddenIndex];
-
         string[] progressionDisplay = new string[length];
         for (int i = 0; i < length; i++)
         {
@@ -43,9 +39,7 @@ public class GeometricProgrssionGame
                 progressionDisplay[i] = progression[i].ToString();
             }
         }
-
         string question = string.Join(" ", progressionDisplay);
-
         return (question, correctAnswer.ToString());
     }
 }
