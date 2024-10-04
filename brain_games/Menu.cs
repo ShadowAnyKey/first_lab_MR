@@ -13,7 +13,7 @@ public class Menu
         Console.WriteLine("2. Игра \"Геометрическая прогрессия\"");
         Console.Write("Введите номер игры, в которую хотите сыграть: ");
 
-        string choice = Console.ReadLine();
+        string? choice = Console.ReadLine();
 
         switch (choice)
         {

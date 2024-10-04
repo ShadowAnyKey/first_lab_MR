@@ -9,7 +9,7 @@ public class Engine
 {
     public static string GetNameUser()
     {
-        string userName;
+        string? userName;
         do
         {
             Console.WriteLine("May I have your name?");
@@ -47,7 +47,7 @@ public class Engine
             var (question, correctAnswer) = generateRound();
             Console.WriteLine($"Question: {question}");
             Console.WriteLine("Your answer: ");
-            string userImput = Console.ReadLine();
+            string? userImput = Console.ReadLine();
             if (userImput == correctAnswer)
             {
                 Console.WriteLine("Correct");
