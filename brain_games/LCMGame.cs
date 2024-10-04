@@ -1,9 +1,18 @@
+// <copyright file="LCMGame.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 using System;
 
+/// <summary>
+/// Основной класс игры.
+/// </summary>
 public class LCMGame
 {
     private static Random random = new Random();
 
+    /// <summary>
+    /// Представляет функцию игры.
+    /// </summary>
     public static void Play()
     {
         string gameName = "brain-scm";
@@ -19,6 +28,7 @@ public class LCMGame
             b = a % b;
             a = temp;
         }
+
         return a;
     }
 

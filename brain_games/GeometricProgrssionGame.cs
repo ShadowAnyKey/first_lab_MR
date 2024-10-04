@@ -1,12 +1,22 @@
+﻿// <copyright file="GeometricProgrssionGame.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// Основной класс.
+/// </summary>
 public class GeometricProgrssionGame
 {
-    public static Random random = new Random();
+    private static Random random = new Random();
+
+    /// <summary>
+    /// Функция, запускающая игру.
+    /// </summary>
     public static void Play()
     {
         string gameName = "brain-scm";
@@ -14,6 +24,10 @@ public class GeometricProgrssionGame
         Engine.RunGame(gameName, gameInfo, GenerateRound);
     }
 
+    /// <summary>
+    /// Функция, создающая раунды.
+    /// </summary>
+    /// <returns>Выдаёт вопрос и правильный ответ на него.</returns>
     public static (string question, string correctAnswer) GenerateRound()
     {
         int length = random.Next(5, 11);
@@ -25,6 +39,7 @@ public class GeometricProgrssionGame
         {
             progression[i] = progression[i - 1] * ratio;
         }
+
         int hiddenIndex = random.Next(0, length);
         int correctAnswer = progression[hiddenIndex];
         string[] progressionDisplay = new string[length];
@@ -39,6 +54,7 @@ public class GeometricProgrssionGame
                 progressionDisplay[i] = progression[i].ToString();
             }
         }
+
         string question = string.Join(" ", progressionDisplay);
         return (question, correctAnswer.ToString());
     }
