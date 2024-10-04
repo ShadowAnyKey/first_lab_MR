@@ -9,9 +9,9 @@ public class Menu
     static void Main(string[] args)
     {
         Console.WriteLine("Please, choose the game: ");
-        Console.WriteLine("1. Игра \"НОК\"");
-        Console.WriteLine("2. Игра \"Геометрическая прогрессия\"");
-        Console.Write("Введите номер игры, в которую хотите сыграть: ");
+        Console.WriteLine("1. Game \"НОК\"");
+        Console.WriteLine("2. Game \"Геометрическая прогрессия\"");
+        Console.Write("Enter the number of the game you want to play: ");
 
         string? choice = Console.ReadLine();
 
@@ -24,7 +24,7 @@ public class Menu
                 GeometricProgrssionGame.Play();
                 break;
             default:
-                Console.WriteLine("Неверный выбор. Выход из программы.");
+                Console.WriteLine("Wrong choice. Exit the program.");
                 break;
         }
     }

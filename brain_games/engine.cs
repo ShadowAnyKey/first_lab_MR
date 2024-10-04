@@ -39,7 +39,7 @@ public class Engine
         Console.WriteLine(gameName);
         string userName = GetNameUser();
         Console.WriteLine(gameInstruction);
-        Console.WriteLine("Введите желаемое количество раундов: ");
+        Console.WriteLine("Enter the desired number of rounds: ");
         int rounds = Convert.ToInt32(Console.ReadLine());
         int numCorrectAnsers = 0;
         for (int i = 0; i < rounds; i++)
