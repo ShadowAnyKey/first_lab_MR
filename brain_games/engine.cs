@@ -36,7 +36,7 @@ public class Engine
     }
 
     /// <summary>
-    /// ФункцияЮ которая показывает надпись в случае победы.
+    /// Функция, которая показывает надпись в случае победы.
     /// </summary>
     /// <param name="name">Имя игрока.</param>
     public static void ShowCongratulations(string name)
